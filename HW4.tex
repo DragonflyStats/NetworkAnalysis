@@ -1,0 +1,47 @@
+Question 1
+Load the network of recipe ingredient complements for Middle Eastern recipes into Gephi (here is a GEXF version if .gephi doesn't load for you) . The nodes are ingredients, and the edges are a variant on pointwise mutual information based on the co-occurrence of ingredients. Run "Modularity", a community finding algorithm (keeping the "randomize" and "edge weights" boxes checked). Color the nodes according to their assigned community and answer the following: 
+Vanilla is in the same community as
+butter
+potato
+onion
+parsley
+Question Explanation
+
+You can find the Modularity function under "Statistics" and to color, go to Partition ->Nodes (click on the green circular arrows to refresh), and then select 'Modularity Class'. Nodes in the same community will have the same color.
+%-------------------------------------------------------------------------------%
+Question 2
+Run Gephi's 'Modularity'-based community finding algorithm on two recipe ingredient networks: Southeast Asian (GEXF format) and North American (GEXF format ). The algorithm will yield a community assignment for the nodes, along with a modularity value for that assignment, which of the following is true?
+The community assignment yields higher modularity for the Southeast Asian recipe ingredient network than for the North American network.
+The modularity values from the assignments for the two networks are indistinguishable.
+The community assignment for the North American network achieves the highest modularity value of any network with the same number of nodes and edges.
+The community assignment yields higher modularity for the North American recipe ingredient network than for the Southeast Asian network
+Question Explanation
+
+Run 'modularity' for each network before answering this question.
+%-------------------------------------------------------------------------------%
+Question 3
+Run modularity (with edge weights ignored) on the network of recipe ingredient complements combined across cuisines (GEXF format in case .net does not work for you). You may find it helps to apply a layout algorithm such as Force Atlas 2. Next threshold edges such that you only keep ones with weight exceeding 0.20. Again apply the modularity-based community finding algorithm. Also, re-run a layout algorithm such as Force Atlas 2 to see what is going on more clearly. Relative to the unthresholded network, this network has:
+a higher number of communities
+a smaller number of communities
+more hubs ingredients that have a high number of edges
+lower modularity
+Question Explanation
+
+Compare  to 
+%-------------------------------------------------------------------------------%
+Question 4
+In an Erdos-Renyi random graph, you are more likely to observe a:
+clique of size k
+k-core
+Question Explanation
+
+A clique is only a clique if all edges are present. A k-core requires only that each node within the k-core have edges to at least k other members of the core.
+Question 5
+Load the file words.net (or words.gexf) into Gephi. You may find it helpful to do both a layout and color by community (after you run Modularity) in order to answer the following question. Based on the network of word-translation pairs, which German word (prefaced with "g_") is most likely to be a translation of the word "coil"?
+Sprung
+Feder
+Frühjahr
+Quelle
+Question Explanation
+
+Even if two words are not directly adjacent in the graph, having many short indirect paths is a clue that one may share a meaning with another. This is what the network looks like

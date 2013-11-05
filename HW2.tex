@@ -1,0 +1,80 @@
+%----------------------------------------------------------------------------------%
+Question 1
+Go to the NetLogo model on Erdös-Renyi diffusion and read the description on the page of how the model works. Set NUM-NODES to 200. Click on SETUP-A-NEW-NETWORK. Then click on SPREAD to get it going! Observe how the infection attempts to spread through the network. Under what condition do you expect the infection to spread to a significant fraction of the network? Take "significant" to mean >= 5% of all the nodes.
+Your Answer		Score	Explanation
+When the average shortest path is less than 2.	Inorrect	0.00	Although a short average shortest path helps the agent spread more quickly, the question is asking how many nodes will be infected, no matter what the timing.
+When the network has reached the percolation threshold.			
+When the average degree is 1/2.			
+When the highest degree of any node in the network is 2.			
+Total		0.00 / 2.00	
+Question Explanation
+
+The agent will eventually traverse all nodes reachable from the starting point. Therefore, the larger the connected component, the more nodes it will potentially be able to infect.
+%----------------------------------------------------------------------------------%
+Question 2
+Stay with the same model of an ER random graph. Set NUM-NODES to 200 and AVERAGE-DEGREE to 2. SETUP-A-NEW-NETWORK and then 'SPREAD (repeat)', as many times as you need to in order to answer this question. What fraction of the nodes are in the giant component? Express your answer as a value between 0 and 1. Your answer needs to be accurate within 0.1.
+Answer for Question 2
+You entered:
+
+Your Answer		Score	Explanation
+0.45	Incorrect	0.00	
+Total		0.00 / 2.00	
+Question Explanation
+
+Observe the number of nodes infected. If the infection starts in the giant component, the number of infected nodes should reveal its size.
+%----------------------------------------------------------------------------------%
+Question 3
+Switch to a growth and preferential attachment model. Set NUM-NODES to 200, M = 1 (each node joins the network with one edge), and INFECT-RATE = 0.15. Vary PROB-PREF between 0 and 1 (you can try inbetween values, but it's not necessary) to alternate between the random growth and preferential attachment models. Examine the plot for the number of infected individuals over time, as well as the value "time-to-90-percent" which is the number of steps until 90% of the individuals are infected. Which process generates a network through which the agent diffuses more quickly:
+Your Answer		Score	Explanation
+random growth model			
+preferential attachment model	Correct	2.00	The presence of hubs accelerates the diffusion process, they are both more likely to be infected early, and they have more neighbors they can subsequently infect.
+Total		2.00 / 2.00	
+Question Explanation
+
+You should be able to answer the question by running the model repeatedly, sometimes with preferential attachment, sometimes without. Simply observe the time it takes for the infection to spread through most of the network.
+%----------------------------------------------------------------------------------%
+Question 4
+Stay with the growth and preferential attachment model. Set PROB-PREF to 1 to have a network grown with preferential attachment. Observe the simulation proceeding slowly by sliding the speed slider (over the visualization window) from 'normal speed' to the 'slower' range. Which of the following holds true for the hubs.
+Your Answer		Score	Explanation
+They are more likely to become infected early.			
+They are infected later than others because they are shielded by the nodes surrounding them.	Inorrect	0.00	
+They will be infected later but then spread the disease rapidly.			
+They are located on the periphery of the network and so are less likely infect others.			
+Total		0.00 / 1.00	
+Question Explanation
+
+The hubs are the nodes with many edges. Observe both when the infection reaches them and how this affects their neighbors.
+%----------------------------------------------------------------------------------%
+Question 5
+As the number of nodes in an Erdos-Renyi graph grows, the number of steps it will take for a randomly selected node to infect any other will on average scale as:
+Your Answer		Score	Explanation
+constant			
+N^(-3)			
+N	Inorrect	0.00	
+log(N)			
+Total		0.00 / 1.00	
+Question Explanation
+
+Think about the average distance between any two nodes and how it might relate to the number of steps the infection would take.
+%----------------------------------------------------------------------------------%
+Question 6
+Imagine nodes arranged in a ring (each node has two neighbors, one on the left, and one on the right), and they are arranged in a big circle. At each time step, every neighbor of an infected node becomes infected if they are not infected already. What is the average number of steps it takes for a node in the network to become infected if 1 node is infected at random.
+Your Answer		Score	Explanation
+N^2			
+N			
+log(N)			
+N/4	Correct	1.00	The furthest away a node can be from the random infection point is N/2. Half the nodes are N/4 away. N/4 is the average.
+Total		1.00 / 1.00	
+Question Explanation
+
+Start by thinking about which node would take the maximum number of steps to be reached. Where is it located? And now thinking about the average number of steps it would take to infect any node along the lattice.
+%----------------------------------------------------------------------------------%
+Question 7
+Which network generation process is more likely to have generated the degree distribution in the following image?
+Your Answer		Score	Explanation
+Preferential attachment			
+Erdös-Renyi	Correct	1.00	
+Total		1.00 / 1.00	
+Question Explanation
+
+The degree distribution is roughly bell-shaped, which means that hubs are for the most part absent.

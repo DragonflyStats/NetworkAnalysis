@@ -1,0 +1,72 @@
+Question 1
+Read the paper 'The human disease network' and download the diseasome.gexf file by right clicking on the link (to work with in Gephi). For this question, instead of working in Gephi, you can use the online explorer (Java 6 needed). For those of you working in Gephi, if upon loading the file, you end up with 1 node, right click on it and select ungroup to see all the diseases and genes. Now answer: Diseases of which of the following disease classes are most tightly clustered (proximate to one another) in the gene disease network.
+Cancer
+Metabolic
+Neurological
+Renal (affecting the kidneys)
+Question Explanation
+
+Locate the disease nodes associated with each disease class on the network. Here for example are the different cancers highlighted image of cancers and their connections to each other and to genes associated with them
+Question 2
+Continuing with the diseasome network, which of the following genes has highest degree centrality?
+LEPR
+BARD1
+TP53
+FOXE3
+Question Explanation
+
+Calculate average degree in Gephi, which will give you the degrees for each node. Then sort by degree in the data laboratory to find the answer.
+Question 3
+Load the data on social connections between bottlenose dolphins living in Doubtful Sound, New Zealand. What do you observe about the network (check all that apply).
+the clustering coefficient is no higher than it would be for an equivalent Erdos Renyi random graph.
+the average degree is higher than it would be in an ER random graph with the same number of nodes and edges
+the network is assortative on sex: same sex interactions occur more often than they would if the network were rewired at random
+Question Explanation
+
+To answer the question, try constructing the equivalent ER random graph in Gephi and also coloring the nodes (in the real graph, not the ER graph) by sex. You can further filter based on intra and inter edges (by sex) using the Filters->Attributes->(Inter Edges or Intra Edges) option.
+Question 4
+The dolphins were followed for a period of years. At one point, one individual disappeared and the dolphins split up into two separate groups. When the individual reappeared, they again formed one social network. Coincidentally this individual has highest betweenness in the network. Who is it?
+SN100
+Quasi
+Zig
+Vau
+Question Explanation
+
+Calculate betweenness using the Avg. Path Length calculation in Gephi, or using other software to answer this question.
+Question 5
+The images below show a network of ingredients that are paired more often than you would expect at random (using pointwise mutual information), for different cuisines. A layout algorithm with the same parameters was applied to every network. Nodes are sized according to how many recipes the ingredient appears in. They are colored according to assigned community using Gephi's modularity-based community finding algorithm. The thickness of each edge corresponds to the logarithm of the number of shared flavor compounds between the two ingredients. Which of these networks exhibits the most pronounced community structure?
+Southern European 
+South Asian 
+East Asian 
+Question Explanation
+
+Observe whether any sets of nodes are more densely interlinked with each other (meaning that they co-occur often) but less sparsely connected to the rest of the network.
+Question 6
+The flavor network is a one-mode projection of a bipartite network where ingredients have edges to the flavor compounds they contain. This image shows how the weights are derived. 
+two mode network being projected into one mode with weights assigned accordingly
+The networks you were shown in the previous question were flavor networks, with edges filtered out if the ingredients did not co-occur in recipes more often than expected. The average weights for the networks are as follows: Southern European: 18.51, North American: 16.70, East Asian 14.79, Southeast Asian 13.32. Based on this information, which of the following statements is true?
+Western cuisine tends to pair ingredients that share more flavor compounds.
+Eastern cuisine has many ingredients that share no flavor compounds with any others.
+Western cuisine displays a hub-and-spoke structure of ingredients.
+Eastern cuisine tends to pair ingredients that share more flavor compounds.
+Question Explanation
+
+Try to determine how the weights are derived.
+Question 7
+Load the network of Middle Eastern ingredients. Calculate betweenness for all nodes. A high betweenness ingredient in Middle Eastern cuisine is
+walnut
+dill
+coriander
+garlic
+Question Explanation
+
+Use the Av. Path Length function under Statistics in Gephi, or use another software of your choice.
+Question 8
+Based on the Hidalgo et al. paper and Cesar Hidalgo's video presentation, which of the following is true?
+Proximity in the product space network is derived from the raw materials that are used to construct each product.
+The product space network can be used to predict which products a country is likely to start exporting next based on its current production capabilities.
+A country is likely to start exporting a product that has a large network distance in product space from products it currently exports.
+Analyzing the position of a country in the product space is less predictive of how quickly a country will develop than other factors, e.g. economic stability and investment in education.
+Question Explanation
+
+To explore the work, check out the website devoted to the project.

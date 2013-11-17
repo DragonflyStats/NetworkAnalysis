@@ -1,0 +1,57 @@
+Question 1
+Using the NetLogo simulation of a diffusion process on a small world topology, answer the following. If the 
+infection rate is 0.25, and the recovery rate is 0.30, what is true of the diffusion processes in the regular
+lattice vs. rewired case:
+shortcuts allow all nodes to be simultaneously in the infected state
+shortcuts prolong the amount of time an established infection can stay in the network
+a pure lattice topology (no shortcuts) allows the infection to become established more quickly
+Question Explanation
+
+Look for the number of infected individuals in the long run. You may need to reinfect the network a 
+few times to start to see the difference in behavior.
+%========================================================================%
+Question 2
+Using the NetLogo model of graph coloring on a network grown randomly or preferentially, answer the following
+(setting m = 1). What is true about a time it takes for the network to find a solution:
+preferential attachment generates a topology that is solved more quickly than one generated with random attachment
+preferential attachment generates a topology that is solved more slowly than one generated with random attachment.
+the average time to solution is unaffected by whether the growth is random or preferential
+Question Explanation
+
+If you're not sure about the answer here (though VARY-BA-TOPOLOGY should allow you to answer this), 
+check Kearns et al. paper (listed in the syllabus) where they used human subjects to run this experiment and generally
+get similar results.
+%========================================================================%
+Question 3
+Use the NetLogo cascade model with the 19_4 network (setup19_4 button, a = 3, b = 2, bilingual = off) and allocate 
+opinion at random (or you can manually set the nodes' opinions using the select-blue and select-red buttons and 
+clicking on individual nodes). Then allow the nodes to update their opinions until everyone is settled into 
+their opinions. With these payoffs, how many distinct communities do you observe that can have a separate opinion from neighboring communities?
+
+%------------------%
+Question Explanation
+
+With these payoffs you should be able to observe different opinions persisting 
+in different parts of the network. Try setting individual nodes or re-randomizing to see a range of behaviors
+depending on the initial allocation of choices.
+%========================================================================%
+Question 4
+Using the same NetLogo cascade model with the 19_4 network (setup19_4 button, b = 2, bilingual = off), how high does a, the payoff for choosing blue at the same time as a friend, need to be such that the whole network will adopt blue every time if at least one node adopts blue?
+5
+3
+7
+1
+Question Explanation
+
+To figure this one out, you may want to alloc-opinion with init-prob-blue 0. That way the whole network 
+will have initially chosen red. Then use select-blue to set just a single node's opinion to blue.
+%========================================================================%
+Question 5
+Use the NetLogo model of innovation on a network to answer the following. Relative to the average maximum
+solution achieved on a randomly grown topology, a network grown with preferential attachment will
+have roughly the same time to solution and max fitness
+at least 10% lower max final fitness and 50% faster convergence to solution
+at least 10% higher max final fitness and 50% faster convergence to solution
+Question Explanation
+
+Run the model repeatedly at the two extremes (prob-pref = 0 and prob-pref = 1) and note how quickly the model converges and what is shown under agent-max.

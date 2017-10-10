@@ -1,4 +1,4 @@
-Coursera-SNA
+Network Analysis
 ============
 
 Coursera-SNA

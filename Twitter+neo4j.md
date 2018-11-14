@@ -26,7 +26,9 @@ Based off this graph, it is clear to see why storing information like Twitter's 
 
 ***
 ####Master Data Management
-The world of master data is changing. Data architects and application developers are swapping their relational databases with graph databases to store their master data. This switch enables them to use a data store optimized to discover new insights in existing data, provide a 360-degree view of master data and answer questions about data relationships in real time. Business gain the benefit of real time insights into data, along with a place to store and model their data. Some challenges that can stem from this, however, are:
+The world of master data is changing. Data architects and application developers are swapping their relational databases with graph databases to store their master data. This switch enables them to use a data store optimized to discover new insights in existing data, provide a 360-degree view of master data and answer questions about data relationships in real time. 
+
+Business gain the benefit of real time insights into data, along with a place to store and model their data. Some challenges that can stem from this, however, are:
 * **Complex and Hierarchical Datasets** are quite difficult to manage in this state. The code is difficult to build, slow to run and expensive and time-consuming to maintain.
 * **Real-time Query Performance** Master data systems must integrate with and provide data to a host of applications within the business – often in real time. However, traversing a complex and highly interconnected data set to provide real-time information is a challenge, and often leads to slow responses if the data set is quite large.
 * **Dynamic Structure** Master data is highly dynamic, with constant addition and re-organization of nodes, making it harder for developers to design systems that accommodate both current and future requirements. This is due to the changing nature of the nodes.
@@ -36,7 +38,9 @@ Where Neo4j comes in, is here. The problem with relational database management s
 
 ***
 ####Social Networks
-Whether you’re leveraging declared social connections or inferring relationships based on activity, graph databases such as Neo4j offer a world of fresh possibility when it comes to creating innovative social networks. Navigating a social graph and understanding both individuals and their relationships requires *complex and deep queries*. These particular queries bring most relational databases to their knees. Likewise, other types of NoSQL databases struggle to handle high degrees of relatedness. Graph databases are both easy and quick at traversing relationships, and they return instantaneous query results, making them an ideal choice for your social application.Social networks are already graphs, so there’s no point converting a graph into tables and then back again. Having a data model that directly matches your domain model helps you better understand your data, communicate more effectively and *avoid* needless work. Using Neo4j improves the quality and speed of development for your social network application.
+Whether you’re leveraging declared social connections or inferring relationships based on activity, graph databases such as Neo4j offer a world of fresh possibility when it comes to creating innovative social networks. Navigating a social graph and understanding both individuals and their relationships requires *complex and deep queries*. These particular queries bring most relational databases to their knees. Likewise, other types of NoSQL databases struggle to handle high degrees of relatedness. 
+
+Graph databases are both easy and quick at traversing relationships, and they return instantaneous query results, making them an ideal choice for your social application.Social networks are already graphs, so there’s no point converting a graph into tables and then back again. Having a data model that directly matches your domain model helps you better understand your data, communicate more effectively and *avoid* needless work. Using Neo4j improves the quality and speed of development for your social network application.
 
 <pre><code>
 library(bitops)
